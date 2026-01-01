@@ -1,0 +1,17 @@
+package binary_scarch;
+
+public class mountain_peak {
+    public static void main(String[] args) {
+        int arr[] = {1,2,3,4,5,6,7,5,4,3,2};
+//        need to return peak intde of the arre
+        int n = arr.length;
+
+        for (int i =0; i<n-1; i++){
+            if(arr[i]>arr[i+1]){
+                System.out.println(arr[i]+" "+i);
+                break;
+            }
+        }
+
+    }
+}
